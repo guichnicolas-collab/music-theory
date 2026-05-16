@@ -3,9 +3,10 @@ import { Link, Outlet } from "react-router-dom";
 function Lessons() {
   return (
     <div>
-      <h1>Lessons</h1>
-      <Link to="/lessons/1">Lesson 1</Link>
-      <Link to="/lessons/2">Lesson 1</Link>
+      <div className="sidenav">
+        <Link to="/lessons/major-scale">Major Scale</Link>
+        <Link to="/lessons/minor-scale">Minor Scale</Link>
+      </div>
       <Outlet />
     </div>
   );
